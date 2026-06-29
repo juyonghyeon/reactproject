@@ -14,16 +14,16 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             borderRadius: '8px'
         }}>
             <header style={{
-                backgroundColor: '#4caf50',
-                color: 'white', padding: '10px 20px',
+                backgroundColor: '#eee',
+                padding: '10px 20px',
                 borderRadius: '8px', display: "flex", justifyContent: "space-between", alignItems: "center"
             }}>
                 <h1>학사 관리 프로젝트</h1>
                 <div>
                     {/* 로그인, 회원가입 ui 나오게 하기*/}
-                    <Link to="/" style={{marginRight: "10px", color: "white"}}>로그인</Link>
+                    <Link to="/login" style={{marginRight: "10px", color: "black", textDecoration: "none"}}>로그인</Link>
                     {/* <Link to="/signup" style={{ color: "white"}}>회원가입</Link> */}
-                    <Link to="/" style={{ color: "white"}}>회원가입</Link>
+                    <Link to="/signup" style={{ color: "black", textDecoration: "none"}}>회원가입</Link>
                 </div>
             </header>
             <Navbar />
@@ -32,10 +32,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 {children}
             </main>
             <footer style={{
-                backgroundColor: '#4caf50',
+                backgroundColor: '#eee',
                 color: 'white', padding: '10px',
                 borderRadius: '8px', textAlign: 'center'
-            }}>@학사 관리</footer>
+            }}></footer>
         </div>
     )
 }

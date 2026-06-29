@@ -24,16 +24,12 @@ const DropdownNav: React.FC = () => {
     return (
         <div ref={dropdownRef} className="nav-item dropdown">
             <div className="nav-link dropdown-toggle" onClick={toggleDropdown}>
-                커뮤니티 <span></span>
+                게시판 <span></span>
             </div>
             {
                 isOpen && (<div className="dropdown-menu show">
-                    <NavLink to="/" onClick={closeDropdown} className={linkClass}>드랍다운1</NavLink>
-                    <NavLink to="/" onClick={closeDropdown} className={linkClass}>드랍다운2</NavLink>
-                    <NavLink to="/" onClick={closeDropdown} className={linkClass}>드랍다운3</NavLink>
-                    <NavLink to="/" onClick={closeDropdown} className={linkClass}>드랍다운4</NavLink>
-                    <NavLink to="/" onClick={closeDropdown} className={linkClass}>드랍다운5</NavLink>
-                    <NavLink to="/" onClick={closeDropdown} className={linkClass}>드랍다운6</NavLink>
+                    <NavLink to="/boardwrite" onClick={closeDropdown} className={linkClass}>게시판작성</NavLink>
+                    <NavLink to="/boardlist" onClick={closeDropdown} className={linkClass}>게시판목록</NavLink>
                 </div>)
             }
         </div>

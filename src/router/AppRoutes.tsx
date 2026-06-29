@@ -1,6 +1,11 @@
 import { Route, Routes } from "react-router-dom"
 import Home from "../cont/Home"
-import Example from "../cont/example/Example"
+import BoardWrite from "../cont/board/BoardWrite"
+import BoardList from "../cont/board/BoardList"
+import BoardeDeltail from "../cont/board/BoardeDeltail"
+import Login from "../cont/member/Login"
+import Signup from "../cont/member/Signup"
+import Diary from "../cont/diary/Diary"
 // 라우터란?
 // 사용자가 입력한 주소를 감지하는 역할을 하며, 
 // 여러 환경에서 동작할 수 있도록 여러 종유의 라우터 컴포넌트를 제공
@@ -29,7 +34,13 @@ AppRoutes의 구성
 const AppRoutes: React.FC = () => {
     const routeList = [
         { path: '/', element: <Home /> },
-        { path: '/example', element: <Example />}
+        // board
+        { path: '/boardwrite', element: <BoardWrite /> },
+        { path: '/boardlist', element: <BoardList /> },
+        { path: '/board/:id', element: <BoardeDeltail/> },
+        { path: '/login', element: <Login/> },
+        { path: '/signup', element: <Signup/> },
+        { path: '/diary', element: <Diary /> },
     //     { path: '/board', element: <BoardList /> }, // 게시판 목록
 //      { path: '/위치', element: <컴포넌트명 /> },
 //      위치에 오는 값은 Navbar.tsx와 DropdownNav.tsx의 

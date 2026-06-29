@@ -11,28 +11,13 @@ const Navbar: React.FC = () => {
       <div className="container-fluid">
 
         {/* 메뉴 */}
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse bg-warning" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink to="/" className={commonLinkClass}>Home</NavLink>
+              <NavLink to="/" className={commonLinkClass}>메인 페이지</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/example" className={commonLinkClass}>내용1</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/content2" className={commonLinkClass}>내용2</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/content3" className={commonLinkClass}>내용3</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/content4" className={commonLinkClass}>내용4</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/content4" className={commonLinkClass}>내용5</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/content4" className={commonLinkClass}>내용6</NavLink>
+              <NavLink to="/diary" className={commonLinkClass}>주년 행사</NavLink>
             </li>
             {/* 드롭다운 */}
             <li className="nav-item">

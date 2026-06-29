@@ -1,4 +1,4 @@
-/* navbar.module.css */
+/* linkactive.module.css */
 
 /* 링크 일때 사용 */
 .link {
@@ -10,11 +10,11 @@
 }
 
 .link:hover {
-    color: purple;
+    color: #ffc107;
 }
 
 /* 활성화 되었을 대 사용 */
 .active {
-    color: yellowgreen;
+    color: #198754;
     font-weight: bold;
 }
