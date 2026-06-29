@@ -17,6 +17,9 @@ const Navbar: React.FC = () => {
               <NavLink to="/" className={commonLinkClass}>메인 페이지</NavLink>
             </li>
             <li className="nav-item">
+              <NavLink to="/gallery" className={commonLinkClass}>캠퍼스 시설</NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink to="/diary" className={commonLinkClass}>주년 행사</NavLink>
             </li>
             {/* 드롭다운 */}
